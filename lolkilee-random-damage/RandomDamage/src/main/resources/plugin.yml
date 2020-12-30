@@ -1,0 +1,8 @@
+main: Lolkilee.plugins.randomdamage.Main
+name: randomdamage
+version: '1.0'
+description: randomizes damage for all entities
+commands:
+  mult:
+    description: Changes the random multiplier
+    usage: /mult <value>
