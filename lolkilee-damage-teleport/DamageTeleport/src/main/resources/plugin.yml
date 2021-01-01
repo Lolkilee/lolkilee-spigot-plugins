@@ -1,0 +1,9 @@
+main: Lolkilee.plugins.damageteleport.Plugin
+name: randomteleport
+version: '1.0'
+description: teleports players randomly when damaged
+commands:
+  changedistance:
+    description: changes the max distance a player can be teleported
+    usage: /changedistance <amount>
+  
