@@ -11,7 +11,7 @@ public class DamageListener implements Listener
 {
     //In blocks
     public static int maxDistance = 100;
-    public static int minDistance = 10;
+    public static int minDistance = -maxDistance;
     private Random r = new Random();
 
     @EventHandler
@@ -27,7 +27,7 @@ public class DamageListener implements Listener
             z += r.nextInt((maxDistance - minDistance) + 1) + minDistance;
 
             int y = p.getWorld().getHighestBlockYAt(x, z);
-            Location l = new Location(p.getWorld(), x, y, z);
+            Location l = new Location(p.getWorld(), x, y + 1, z);
             p.teleport(l);
         }
     }

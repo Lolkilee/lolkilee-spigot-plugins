@@ -26,6 +26,7 @@ public class Plugin extends JavaPlugin
             if(args.length > 0)
             {
                 DamageListener.maxDistance = Integer.parseInt(args[0]);
+                DamageListener.minDistance = -DamageListener.maxDistance;
                 getLogger().info(sender.getName() + " changed the max distance to: " + DamageListener.maxDistance);
                 return true;
             }
