@@ -1,0 +1,4 @@
+main: Lolkilee.plugins.antidespawn.App
+name: antidespawn
+version: '1.0'
+description: disables despawning of persistant mobs workaround
